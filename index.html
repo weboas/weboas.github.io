@@ -46,7 +46,63 @@
 <div class="background" id="canvasContainer"></div>
 <div id="mySidenav" class="sidenav" onMouseLeave="closeNav()">
 <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
-
+<menu>
+<a href="news.html">News</a>
+<a href="tech.html">Tech</a>
+<a href="radio.html">Radio</a>
+<a href="crypto.html">Crypto</a>
+<a href="stocks.html">Stocks</a>
+<a href="weather.html">Weather</a>
+<a href="password.html">Password</a>
+<a href="wall.html">TweetWall</a>
+<a href="editor.html">Editor</a>
+<a href="index.html">Arcade</a>
+<a href="index.html">Donate</a>
+<a href="index.html">Forum</a>
+<a href="index.html">Chat</a>
+<a href="index.html">Tube</a>
+<a href="index.html">FAQ</a>
+</menu><hr>
+<div id="customcontainer">
+<div id="customlinks">
+<ul id="favorite-links"></ul>
+<div id="new-link-button">
+<button id="add-link-btn">Add New Links</button>
+</div>
+</div>
+<div id="add-link-form">
+<input type="text" id="title" maxlength="12" placeholder="Title" />
+<input type="text" id="url" value="https://" />
+<select id="menu-select"></select>
+<button id="add">Save</button>
+</div>
+<div id="show-hide-customization">
+<div id="checkbox-wrapper">
+<span class="checkbox">
+<input type="checkbox" id="customization-checkbox" name="customization-checkbox">
+<label for="customization-checkbox" id="customization-label">&nbsp;Hide Link Menu Icons</label>
+</span>
+<span class="checkbox">
+<input type="checkbox" id="oldReddit-checkbox" name="oldReddit-checkbox">
+<label for="oldReddit-checkbox" id="oldReddit-label">&nbsp;Use Old Reddit</label>
+</span>
+<span class="checkbox">
+<input type="checkbox" id="openNewTab-checkbox" name="openNewTab-checkbox">
+<label for="openNewTab-checkbox" id="openNewTab-label">&nbsp;Search In New Tab</label>
+</span>
+</div>
+</div>
+</div>
+<div id="resetToDefault">
+<p class="btn hollow">Reset All To Default</p>
+</div>
+<div id="customSettings">
+<p id="toggleSettings" class="btn hollow" onclick="toggleSettings()">My Custom Settings</p>
+<div id="settingsContainer">
+<p id="exportSettings" class="btn hollow small">Export</p>
+<label id="importLabel" for="importSettings" class="btn hollow small">Import</label>
+<input type="file" id="importSettings" onchange="return importSettings()" />
+</div>
 </div>
 <div id="customMatrix">
 <button onclick="togglePicker()" id="colorPicker" class="btn hollow jscolor
