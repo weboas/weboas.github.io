@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>WebOas.is - Image Editor</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="editor/image-editor.min.css">
+<link rel="stylesheet" href="editor/color-picker.min.css">
+<script src="editor/fabric.min.js"></script>
+<script src="editor/code-snippet.min.js"></script>
+<script src="editor/FileSaver.min.js"></script>
+<script src="editor/color-picker.min.js"></script>
+<script src="editor/image-editor.min.js"></script>
+<script src="editor/black-theme.js"></script>
+<style>
+	html, body {
+		height: 100%;
+		margin: 0;
+	}
+</style>
+</head>
+<body>
+<div id="image-editor-container"><canvas></canvas></div>
+<script>
+var imageEditor = new tui.ImageEditor('#image-editor-container', {
+     includeUI: {
+         loadImage: {
+             path: 'img/sampleImage.jpg',
+             name: 'SampleImage'
+         },
+         theme: blackTheme,
+         initMenu: 'filter',
+         menuBarPosition: 'right'
+     },
+    cssMaxWidth: 1280,
+    cssMaxHeight: 720,
+    selectionStyle: {
+        cornerSize: 20,
+        rotatingPointOffset: 70
+    }
+});
+window.onresize = function() {
+	imageEditor.ui.resizeEditor();
+}
+tui.usageStatistics = false;
+</script>
+</body>
+</html>

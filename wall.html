@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>WebOas.is - TweetWall</title>
+<link rel="stylesheet" type="text/css" href="wall/inc/layout.css" media="all" />
+<link rel="stylesheet" type="text/css" href="wall/css/dcsns_wall.css" media="all" />
+<script type="text/javascript" src="wall/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="wall/inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="wall/inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="wall/js/jquery.social.stream.wall.1.8.js"></script>
+<script type="text/javascript" src="wall/js/jquery.social.stream.1.6.2.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('#social-stream').dcSocialStream({
+		feeds: {
+			twitter: {
+				id: 'WebOasis_'
+			}
+		},
+		rotate: {
+			delay: 0
+		},
+		twitterId: 'WebOasis_',
+		control: false,
+		filter: false,
+		wall: true,
+		center: true,
+		cache: false,
+		max: 'limit',
+		limit: 250,
+		iconPath: 'images/dcsns-dark/',
+		imagePath: 'images/dcsns-dark/'
+	});
+});
+</script>
+<style>
+h3 {text-align: center;}
+#wall {padding: 10px 0 0 0; min-height: 2000px;}
+#wrapper, #container {width:100%; padding: 0;}
+#nav-container {margin-bottom: 20px;}
+</style>
+</head>
+<body>
+<div id="wall">
+<h3><a href="index.html" target="_blank">WebOasis</a></h3>
+<center><a href="https://Twitter.com/WebOasis_" target="_blank"><img src="media/twitter.svg" height="32" width="32"></a></center>
+<div id="social-stream"></div>
+</div>
+</body>
+</html>

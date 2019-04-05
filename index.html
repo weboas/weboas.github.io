@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>WebOas.is | WebOasis | Web Oasis | v1.15.17</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="title" content="WebOas.is | WebOasis | Web Oasis | The Best Homepage Ever Made">
+<meta name="description" content="Startpage, Homepage, All-in-One Web Portal For The Tech Savvy Who Love WebDev, NetSec, Streams, Downloads, Links & More">
+<meta name="keywords" content="startpage, homepage, geeks, netsec, webdev, web development, website development, web design, website design, graphic design, graphics, downloads, streaming, streaming video, free streaming, free downloads, no ads, no tracking, no logs, vpn, cryptocurreny, bitcoin, cryptocurrencies, crypto, alternative, weboasis, web oasis, weboas.is, portal, web portal, free">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" type="text/css" href="css/style.min.css" />
+<link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css" />
+<link rel="stylesheet" type="text/css" href="js/noty/noty.css" />
+<link rel="stylesheet" type="text/css" href="js/noty/metroui.css" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+<meta name=viewport content="width=device-width, initial-scale=0.65, user-scalable=no" />
+<noscript>Javascript Needed For Page!</noscript>
+<script type="application/javascript" src="js/noty/noty.min.js"></script>
+<script defer type="application/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script defer type="application/javascript" src="js/platform.min.js"></script>
+<script defer type="application/javascript" src="js/script.min.js"></script>
+<script defer type="application/javascript" src="js/custom.min.js"></script>
+<script defer type="application/javascript" src="js/sortable.min.js"></script>
+<script defer type="application/javascript" src="js/jscolor.min.js"></script>
+<script defer type="application/javascript" src="js/canvas/matrix.js"></script>
+</head>
+<body id="body">
+<div class="background" id="canvasContainer"></div>
+<div id="mySidenav" class="sidenav" onMouseLeave="closeNav()">
+<a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
+<menu>
+<a href="news.html">News</a>
+<a href="tech.html">Tech</a>
+<a href="radio.html">Radio</a>
+<a href="crypto.html">Crypto</a>
+<a href="stocks.html">Stocks</a>
+<a href="weather.html">Weather</a>
+<a href="password.html">Password</a>
+<a href="wall.html">TweetWall</a>
+<a href="editor.html">Editor</a>
+<a href="index.html">Arcade</a>
+<a href="index.html">Donate</a>
+<a href="index.html">Forum</a>
+<a href="index.html">Chat</a>
+<a href="index.html">Tube</a>
+<a href="index.html">FAQ</a>
+</menu><hr>
+<div id="customcontainer">
+<div id="customlinks">
+<ul id="favorite-links"></ul>
+<div id="new-link-button">
+<button id="add-link-btn">Add New Links</button>
+</div>
+</div>
+<div id="add-link-form">
+<input type="text" id="title" maxlength="12" placeholder="Title" />
+<input type="text" id="url" value="https://" />
+<select id="menu-select"></select>
+<button id="add">Save</button>
+</div>
+<div id="show-hide-customization">
+<div id="checkbox-wrapper">
+<span class="checkbox">
+<input type="checkbox" id="customization-checkbox" name="customization-checkbox">
+<label for="customization-checkbox" id="customization-label">&nbsp;Hide Link Menu Icons</label>
+</span>
+<span class="checkbox">
+<input type="checkbox" id="oldReddit-checkbox" name="oldReddit-checkbox">
+<label for="oldReddit-checkbox" id="oldReddit-label">&nbsp;Use Old Reddit</label>
+</span>
+<span class="checkbox">
+<input type="checkbox" id="openNewTab-checkbox" name="openNewTab-checkbox">
+<label for="openNewTab-checkbox" id="openNewTab-label">&nbsp;Search In New Tab</label>
+</span>
+</div>
+</div>
+</div>
+<div id="resetToDefault">
+<p class="btn hollow">Reset All To Default</p>
+</div>
+<div id="customSettings">
+<p id="toggleSettings" class="btn hollow" onclick="toggleSettings()">My Custom Settings</p>
+<div id="settingsContainer">
+<p id="exportSettings" class="btn hollow small">Export</p>
+<label id="importLabel" for="importSettings" class="btn hollow small">Import</label>
+<input type="file" id="importSettings" onchange="return importSettings()" />
+</div>
+</div>
+<div id="customMatrix">
+<button onclick="togglePicker()" id="colorPicker" class="btn hollow jscolor
+                {onFineChange:'updateMatrixColor(this)',
+                valueElement: null,
+                showOnClick: false,
+                width: 132,
+                height: 100,
+                sliderSize: 12,
+                padding: 10,
+                value:'#0C85D3',
+                position:'bottom',
+                smartPosition: false,
+                borderColor:'#03a9f438',
+                insetColor:'#000',
+                backgroundColor:'#1f2326'}">
+Change Matrix Color
+</button>
+<div id="pickerContainer"></div>
+<p id="resetColor" class="btn hollow small">Reset Color</p>
+</div>
+<div id="customAnimations">
+<p id="customAnimationsBtn" class="btn hollow toggle" onclick="toggleAnimations()">Change Animation</p>
+<div id="customAnimationsList" class="animations">
+<p id="stars" class="btn hollow small animationBtn">Stars</p>
+<span id="trails" class="btn hollow small animationBtn">Trails</span>
+<p id="nodes" class="btn hollow small animationBtn">Nodes</p>
+<span id="circuits" class="btn hollow small animationBtn">Circuits</span>
+<p id="matrix" class="btn hollow small reset animationBtn">Reset Animation</p>
+</div>
+</div>
+<div id="customBackgrounds">
+<p id="customBgBtnToggle" class="btn hollow toggle">Change Background</p>
+<div id="customBackgroundsList" class="list">
+<div id="thumbTemplate" class="thumb template"></div>
+</div>
+<div id="customBackgroundFileDiv">
+<label for="customBackgroundFile" id="customBackgroundFileLabel" class="btn hollow small">Custom
+Background</label>
+<input type="file" id="customBackgroundFile" name="customBackgroundFile">
+</div>
+<p id="resetBackgroundBtn" class="btn hollow small reset">Reset Background</p>
+</div>
+<div class="email">
+<script type="text/javascript">for (var dqxkew = ["bw", "YQ", "YQ", "bQ", "Lg", "IA", "Pg", "Ig", "ZQ", "YQ", "PA", "Ig", "Yw", "ZQ", "PA", "PQ", "dA", "bw", "bA", "cw", "QA", "QA", "YQ", "cg", "bA", "YQ", "aA", "bQ", "aQ", "YQ", "Yg", "Yw", "Pg", "bA", "bw", "bw", "dA", "dw", "Yw", "cw", "ZQ", "bw", "cw", "dw", "bQ", "cg", "ZQ", "Og", "bQ", "cw", "Lw", "ZQ", "cA", "dA", "Yg", "Yw", "cA", "YQ", "cg", "bQ", "Zg", "Lg", "aQ", "aQ"], jnseuv = [14, 20, 31, 59, 33, 2, 38, 37, 40, 54, 60, 8, 48, 17, 0, 7, 49, 35, 12, 46, 47, 24, 43, 4, 53, 10, 3, 36, 45, 62, 41, 25, 63, 30, 19, 58, 26, 16, 57, 21, 5, 42, 44, 39, 51, 55, 27, 15, 9, 23, 61, 50, 29, 13, 18, 34, 52, 1, 32, 28, 6, 56, 22, 11], pkezkn = new Array, i = 0; i < jnseuv.length; i++)pkezkn[jnseuv[i]] = dqxkew[i]; for (var i = 0; i < pkezkn.length; i++)document.write(atob(pkezkn[i] + "=="));
+			</script>
+<br><br><a href="https://Twitter.com/WebOasis_" target="_blank"><img src="media/twitter.svg" height="24" width="24"></a>
+</div>
+</div>
+<div id="leftsidemenu"><span class="sidenavhome" onMouseOver="openNav()"><a href="javascript:void(0);" onclick="openNav()">&#9776;</a></span>
+</div>
+<div class="weboasislogo"><img src="media/logo.svg" alt="Logo"></div>
+<div class="center-flex offset-25">
+<div class="container" id="mainContainer">
+<div class="container container-search" id="searchContainer">
+<input autocomplete="off" tabindex="1" type="search" id="searchBar" onfocus="javascript:addClass('mainContainer','input-active');" onblur="javascript:removeClass('mainContainer','input-active');" onkeydown="javascript:handleQuery(event,this.value);">
+</div>
+<div class="container container-help" id="searchHelp">
+<ul class="help-list" id="searchHelpMenu"></ul>
+</div>
+<div class="container container-menu" id="menuContainer">
+<ul onclick="javascript:void(0);" class="menu-category" id="categoryMenu"></ul>
+</div>
+</div>
+</div>
+<div id="notesWidget" class="widget">
+<div id="notesContainer" class="container-notes">
+<div class="notes-icon">
+<svg style="width:24px;height:24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" />
+</svg>
+</div>
+<textarea id="notesInput" tabindex="2" onkeydown="javascript:handleNoteInput(event);" onfocus="javascript:handleNotes(event,true);" onblur="javascript:handleNotes(event,false);"></textarea>
+</div>
+</div>
+<div id="infoContainer" class="widget align-right">
+<div id="dateContainer"></div>
+<div id="systemInfoContainer"></div>
+</div>
+<div id="overlay"></div>
+<div id="confirmModal" class="modal">
+<a class="modal-close modal-cancel">x</a>
+<p>Are you sure you want to delete <span id="modal-label"></span> ?</p>
+<div id="modal-controls">
+<button id="deleteLink" class="btn modal-btn">Delete</button>
+<button id="cancelAction" class="btn modal-btn modal-cancel">Cancel</button>
+</div>
+</div>
+<div></div>
+<div id="secretMenu" class="modal">
+<a class="modal-close modal-cancel">x</a>
+<p>&nbsp;Secret Menu</p>
+</div>
+<div id="chatContainer"><a href="index.html" target="_blank" id="chat"></a></div>
+<script type="text/javascript" language="javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            init();
+        });
+    </script>
+<center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/</a></font></center></body>
+</html>
