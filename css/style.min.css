@@ -826,7 +826,7 @@ input[type=file] {
 
 @media only screen and (min-width:700px) {
 	img {
-		max-height: 165px
+		max-height: 145px
 	}
 }
 
